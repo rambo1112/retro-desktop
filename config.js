@@ -2,6 +2,7 @@ import { createCalculator } from './src/apps/calculator/index.js';
 import { createNotepad } from './src/apps/notepad/index.js';
 import { createWallpaperPicker } from './src/apps/wallpaper-picker/index.js';
 import { createCalendar } from './src/apps/calendar/index.js';
+import { createSnakeGame } from './src/apps/snake/index.js';
 
 export const INSTALLED_APPS = [
     {
@@ -27,5 +28,13 @@ export const INSTALLED_APPS = [
         title: 'Calendar',
         icon: '📅',
         component: createCalendar
+    },
+    ,
+    { 
+        id: 'snake', 
+        title: 'Snake', 
+        icon: '🐍', 
+        component: createSnakeGame 
     }
+
 ];
